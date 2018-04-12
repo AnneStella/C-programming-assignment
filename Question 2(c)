@@ -1,17 +1,17 @@
-The function name in the header file is different from that in the program body that is; print_msg  and print_msq are different yet they are supposed to be the same in a given program.
+ #include <stdio.h>
+                    void print_msg( void );
+                    main(){
+                        print_msg("This is a message to print");
+                        return 0;
+                    }
+                    void print_msq( void )
+                    {
+                        puts("This is a message to print");
+                        return 0;
+                    }
 
-The function has arguments yet the declaration indicates that the function has no arguments.
-#include <stdio.h>d
-void print_msg(void);
+/*The function name in the header file is different from that in the program body that is; print_msg  and print_msq are different yet they
+are supposed to be the same in a given program.*/
 
-main()
-{
-    print_msg();
+/*The function has arguments yet the declaration indicates that the function has no arguments.*/
 
-    return 0;
-}
- void print_msg(void)
-                {
-                    puts("This is a message to print");
-                    return 0;
-                }
