@@ -1,2 +1,0 @@
-                    for (counter = 1; counter < MAXVALUES; counter++ );/*The for statement is not supposed to be terminated*/
-    printf("\nCounter = %d", counter);
